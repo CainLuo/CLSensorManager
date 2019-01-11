@@ -1,5 +1,5 @@
 //
-//  ESSensorController.h
+//  EXSensorController.h
 //  CLPedometerManager
 //
 //  Created by Cain Luo on 2018/8/20.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ESSensorController : UIViewController
+@interface EXSensorController : CLTableViewController
 
 @end

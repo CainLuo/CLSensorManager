@@ -13,5 +13,8 @@
 #import <CLUIKit/CLUIKit.h>
 #import <CLFoundation/CLFoundation.h>
 #import <Masonry/Masonry.h>
+#import <YYModel/YYModel.h>
+
+#import "CLSensorManager.h"
 
 #endif /* CLPedometerManager_PrefixHeader_pch */

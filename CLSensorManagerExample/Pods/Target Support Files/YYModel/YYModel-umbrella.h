@@ -10,7 +10,10 @@
 #endif
 #endif
 
+#import "NSObject+YYModel.h"
+#import "YYClassInfo.h"
+#import "YYModel.h"
 
-FOUNDATION_EXPORT double Pods_CLSensorManagerVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_CLSensorManagerVersionString[];
+FOUNDATION_EXPORT double YYModelVersionNumber;
+FOUNDATION_EXPORT const unsigned char YYModelVersionString[];
 

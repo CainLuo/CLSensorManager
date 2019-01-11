@@ -7,34 +7,37 @@
 //
 
 #import "CLPedometerManager.h"
-#import <CoreMotion/CoreMotion.h>
 
 @interface CLPedometerManager()
 
 @property (nonatomic, strong) CMPedometer *cl_pedometer;
 
+@property (nonatomic, assign, readwrite) CLDateType cl_dateType;
+
 @end
 
 @implementation CLPedometerManager
 
-+ (CLPedometerManager *)cl_shareInstance {
-    
++ (CLPedometerManager *)cl_managerWithDateType:(CLDateType)dateType {
+
     static CLPedometerManager *cl_sensorManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        cl_sensorManager = [[self alloc] init];
+        cl_sensorManager = [[self alloc] initWithDateType:dateType];
     });
     
     return cl_sensorManager;
 }
 
-- (instancetype)init {
+- (instancetype)initWithDateType:(CLDateType)dateType {
     self = [super init];
     
     if (self) {
         
         self.cl_pedometer = [[CMPedometer alloc] init];
+        
+        self.cl_dateType = dateType;
     }
     
     return self;
@@ -48,7 +51,15 @@
             if (self.cl_dataDate) {
                 
                 [self.cl_pedometer startPedometerUpdatesFromDate:self.cl_dataDate
-                                                     withHandler:complete];
+                                                     withHandler:^(CMPedometerData * _Nullable pedometerData, NSError * _Nullable error) {
+                                                         
+                                                         dispatch_async(dispatch_get_main_queue(), ^{
+                                                             
+                                                             if (complete) {
+                                                                 complete(pedometerData, error);
+                                                             }
+                                                         });
+                                                     }];
             } else {
                 
                 [self cl_emptyDateErrorComplete:complete];
@@ -60,7 +71,15 @@
                 
                 [self.cl_pedometer queryPedometerDataFromDate:self.cl_startDate
                                                        toDate:self.cl_endDate
-                                                  withHandler:complete];
+                                                  withHandler:^(CMPedometerData * _Nullable pedometerData, NSError * _Nullable error) {
+                                                      
+                                                      dispatch_async(dispatch_get_main_queue(), ^{
+                                                          
+                                                          if (complete) {
+                                                              complete(pedometerData, error);
+                                                          }
+                                                      });
+                                                  }];
             } else {
                 
                 [self cl_emptyDateErrorComplete:complete];

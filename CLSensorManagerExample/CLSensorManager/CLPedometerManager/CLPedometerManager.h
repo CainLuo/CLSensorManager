@@ -22,12 +22,9 @@ typedef NS_ENUM(NSInteger, CLDateType) {
 
 @interface CLPedometerManager : NSObject
 
-+ (CLPedometerManager *)cl_shareInstance;
++ (CLPedometerManager *)cl_managerWithDateType:(CLDateType)dateType;
 
-/**
- 默认: CLDateTypeSingleDay
- */
-@property (nonatomic, assign) CLDateType cl_dateType;
+@property (nonatomic, assign, readonly) CLDateType cl_dateType;
 
 /**
  当CLDateType为CLDateTypeSingleDay才生效

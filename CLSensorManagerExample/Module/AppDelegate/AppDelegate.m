@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ESSensorController.h"
+#import "EXSensorController.h"
 
 @interface AppDelegate ()
 
@@ -30,7 +30,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    ESSensorController *es_sensorController = [[ESSensorController alloc] init];
+    EXSensorController *es_sensorController = [[EXSensorController alloc] init];
     
     UINavigationController *es_naivgationController = [[UINavigationController alloc] initWithRootViewController:es_sensorController];
     

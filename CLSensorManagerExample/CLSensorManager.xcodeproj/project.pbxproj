@@ -11,7 +11,12 @@
 		BF12E5602129BE0F0015024F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF12E55F2129BE0F0015024F /* Assets.xcassets */; };
 		BF12E5632129BE0F0015024F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF12E5612129BE0F0015024F /* LaunchScreen.storyboard */; };
 		BF12E5662129BE0F0015024F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF12E5652129BE0F0015024F /* main.m */; };
-		BF12E5732129CD130015024F /* ESSensorController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF12E5722129CD130015024F /* ESSensorController.m */; };
+		BF12E5732129CD130015024F /* EXSensorController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF12E5722129CD130015024F /* EXSensorController.m */; };
+		BF89434E21E892650071C944 /* EXSensorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89434D21E892650071C944 /* EXSensorModel.m */; };
+		BF89435121E892980071C944 /* EXSensorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89435021E892980071C944 /* EXSensorViewModel.m */; };
+		BF89435621E892AD0071C944 /* EXSensorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89435521E892AD0071C944 /* EXSensorDelegate.m */; };
+		BF89435A21E892BD0071C944 /* EXSensorDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89435921E892BD0071C944 /* EXSensorDataSource.m */; };
+		BF89435E21E894FE0071C944 /* EXPedometerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89435D21E894FE0071C944 /* EXPedometerController.m */; };
 		BF99E1CF21E8760F00EE4D5C /* CLPedometerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF99E1CE21E8760F00EE4D5C /* CLPedometerManager.m */; };
 		F289826BA70FF5A933E62F63 /* Pods_CLSensorManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF40531E15E7437A5ECDB8C /* Pods_CLSensorManager.framework */; };
 /* End PBXBuildFile section */
@@ -27,8 +32,19 @@
 		BF12E5622129BE0F0015024F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF12E5642129BE0F0015024F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF12E5652129BE0F0015024F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BF12E5712129CD130015024F /* ESSensorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESSensorController.h; sourceTree = "<group>"; };
-		BF12E5722129CD130015024F /* ESSensorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESSensorController.m; sourceTree = "<group>"; };
+		BF12E5712129CD130015024F /* EXSensorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXSensorController.h; sourceTree = "<group>"; };
+		BF12E5722129CD130015024F /* EXSensorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXSensorController.m; sourceTree = "<group>"; };
+		BF89434C21E892650071C944 /* EXSensorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXSensorModel.h; sourceTree = "<group>"; };
+		BF89434D21E892650071C944 /* EXSensorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXSensorModel.m; sourceTree = "<group>"; };
+		BF89434F21E892980071C944 /* EXSensorViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXSensorViewModel.h; sourceTree = "<group>"; };
+		BF89435021E892980071C944 /* EXSensorViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXSensorViewModel.m; sourceTree = "<group>"; };
+		BF89435421E892AD0071C944 /* EXSensorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXSensorDelegate.h; sourceTree = "<group>"; };
+		BF89435521E892AD0071C944 /* EXSensorDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXSensorDelegate.m; sourceTree = "<group>"; };
+		BF89435821E892BD0071C944 /* EXSensorDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXSensorDataSource.h; sourceTree = "<group>"; };
+		BF89435921E892BD0071C944 /* EXSensorDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXSensorDataSource.m; sourceTree = "<group>"; };
+		BF89435C21E894FE0071C944 /* EXPedometerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPedometerController.h; sourceTree = "<group>"; };
+		BF89435D21E894FE0071C944 /* EXPedometerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPedometerController.m; sourceTree = "<group>"; };
+		BF89435F21E895F30071C944 /* CLSensorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLSensorManager.h; sourceTree = "<group>"; };
 		BF99E1CD21E8760F00EE4D5C /* CLPedometerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLPedometerManager.h; sourceTree = "<group>"; };
 		BF99E1CE21E8760F00EE4D5C /* CLPedometerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPedometerManager.m; sourceTree = "<group>"; };
 		BF99E1D021E8765000EE4D5C /* CLSensorManager-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLSensorManager-PrefixHeader.pch"; sourceTree = "<group>"; };
@@ -86,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				BF12E56C2129BE3D0015024F /* AppDelegate */,
+				BF89435B21E894E70071C944 /* EXPedometer */,
 				BF12E56D2129BE460015024F /* EXSensor */,
 				BF12E56F2129BE5E0015024F /* Resource */,
 			);
@@ -105,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				BF12E56E2129BE560015024F /* Controller */,
+				BF89434B21E892570071C944 /* Models */,
+				BF89434A21E892490071C944 /* ViewModels */,
 			);
 			path = EXSensor;
 			sourceTree = "<group>";
@@ -112,8 +131,8 @@
 		BF12E56E2129BE560015024F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BF12E5712129CD130015024F /* ESSensorController.h */,
-				BF12E5722129CD130015024F /* ESSensorController.m */,
+				BF12E5712129CD130015024F /* EXSensorController.h */,
+				BF12E5722129CD130015024F /* EXSensorController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -122,19 +141,83 @@
 			isa = PBXGroup;
 			children = (
 				BF12E55F2129BE0F0015024F /* Assets.xcassets */,
-				BF12E5612129BE0F0015024F /* LaunchScreen.storyboard */,
-				BF12E5642129BE0F0015024F /* Info.plist */,
-				BF12E5652129BE0F0015024F /* main.m */,
 				BF99E1D021E8765000EE4D5C /* CLSensorManager-PrefixHeader.pch */,
+				BF12E5642129BE0F0015024F /* Info.plist */,
+				BF12E5612129BE0F0015024F /* LaunchScreen.storyboard */,
+				BF12E5652129BE0F0015024F /* main.m */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		BF89434A21E892490071C944 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BF89435721E892B20071C944 /* EXSensorDataSource */,
+				BF89435321E892A10071C944 /* EXSensorDelegate */,
+				BF89435221E8929A0071C944 /* EXSensorViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BF89434B21E892570071C944 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF89434C21E892650071C944 /* EXSensorModel.h */,
+				BF89434D21E892650071C944 /* EXSensorModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF89435221E8929A0071C944 /* EXSensorViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF89434F21E892980071C944 /* EXSensorViewModel.h */,
+				BF89435021E892980071C944 /* EXSensorViewModel.m */,
+			);
+			path = EXSensorViewModel;
+			sourceTree = "<group>";
+		};
+		BF89435321E892A10071C944 /* EXSensorDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BF89435421E892AD0071C944 /* EXSensorDelegate.h */,
+				BF89435521E892AD0071C944 /* EXSensorDelegate.m */,
+			);
+			path = EXSensorDelegate;
+			sourceTree = "<group>";
+		};
+		BF89435721E892B20071C944 /* EXSensorDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BF89435821E892BD0071C944 /* EXSensorDataSource.h */,
+				BF89435921E892BD0071C944 /* EXSensorDataSource.m */,
+			);
+			path = EXSensorDataSource;
+			sourceTree = "<group>";
+		};
+		BF89435B21E894E70071C944 /* EXPedometer */ = {
+			isa = PBXGroup;
+			children = (
+				BF89435C21E894FE0071C944 /* EXPedometerController.h */,
+				BF89435D21E894FE0071C944 /* EXPedometerController.m */,
+			);
+			path = EXPedometer;
+			sourceTree = "<group>";
+		};
+		BF89436021E8960E0071C944 /* CLPedometerManager */ = {
+			isa = PBXGroup;
+			children = (
+				BF99E1CD21E8760F00EE4D5C /* CLPedometerManager.h */,
+				BF99E1CE21E8760F00EE4D5C /* CLPedometerManager.m */,
+			);
+			path = CLPedometerManager;
 			sourceTree = "<group>";
 		};
 		BF99E1CC21E875C000EE4D5C /* CLSensorManager */ = {
 			isa = PBXGroup;
 			children = (
-				BF99E1CD21E8760F00EE4D5C /* CLPedometerManager.h */,
-				BF99E1CE21E8760F00EE4D5C /* CLPedometerManager.m */,
+				BF89435F21E895F30071C944 /* CLSensorManager.h */,
+				BF89436021E8960E0071C944 /* CLPedometerManager */,
 			);
 			path = CLSensorManager;
 			sourceTree = "<group>";
@@ -235,6 +318,7 @@
 				"${BUILT_PRODUCTS_DIR}/CLUIKit/CLUIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -242,6 +326,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLUIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,9 +340,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF89435E21E894FE0071C944 /* EXPedometerController.m in Sources */,
 				BF99E1CF21E8760F00EE4D5C /* CLPedometerManager.m in Sources */,
-				BF12E5732129CD130015024F /* ESSensorController.m in Sources */,
+				BF89435121E892980071C944 /* EXSensorViewModel.m in Sources */,
+				BF12E5732129CD130015024F /* EXSensorController.m in Sources */,
+				BF89435621E892AD0071C944 /* EXSensorDelegate.m in Sources */,
+				BF89435A21E892BD0071C944 /* EXSensorDataSource.m in Sources */,
 				BF12E5662129BE0F0015024F /* main.m in Sources */,
+				BF89434E21E892650071C944 /* EXSensorModel.m in Sources */,
 				BF12E5582129BE0E0015024F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
