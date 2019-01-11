@@ -1,0 +1,17 @@
+//
+//  CLPedometerManager-PrefixHeader.pch
+//  CLPedometerManager
+//
+//  Created by Cain Luo on 2019/1/11.
+//  Copyright © 2019 Cain Luo. All rights reserved.
+//
+
+#ifndef CLPedometerManager_PrefixHeader_pch
+#define CLPedometerManager_PrefixHeader_pch
+
+#import <CoreMotion/CoreMotion.h>
+#import <CLUIKit/CLUIKit.h>
+#import <CLFoundation/CLFoundation.h>
+#import <Masonry/Masonry.h>
+
+#endif /* CLPedometerManager_PrefixHeader_pch */

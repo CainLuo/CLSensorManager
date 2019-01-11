@@ -12,9 +12,14 @@
 		BF12E5632129BE0F0015024F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF12E5612129BE0F0015024F /* LaunchScreen.storyboard */; };
 		BF12E5662129BE0F0015024F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF12E5652129BE0F0015024F /* main.m */; };
 		BF12E5732129CD130015024F /* ESSensorController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF12E5722129CD130015024F /* ESSensorController.m */; };
+		BF99E1CF21E8760F00EE4D5C /* CLPedometerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF99E1CE21E8760F00EE4D5C /* CLPedometerManager.m */; };
+		F289826BA70FF5A933E62F63 /* Pods_CLSensorManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF40531E15E7437A5ECDB8C /* Pods_CLSensorManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BF40531E15E7437A5ECDB8C /* Pods_CLSensorManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CLSensorManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		280A3F7517D4B272EBC5E0DB /* Pods-CLSensorManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLSensorManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CLSensorManager/Pods-CLSensorManager.debug.xcconfig"; sourceTree = "<group>"; };
+		94DEC604C5D7634BAA7360E6 /* Pods-CLSensorManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLSensorManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-CLSensorManager/Pods-CLSensorManager.release.xcconfig"; sourceTree = "<group>"; };
 		BF12E5532129BE0E0015024F /* CLSensorManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLSensorManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF12E5562129BE0E0015024F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF12E5572129BE0E0015024F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		BF12E5652129BE0F0015024F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF12E5712129CD130015024F /* ESSensorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESSensorController.h; sourceTree = "<group>"; };
 		BF12E5722129CD130015024F /* ESSensorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESSensorController.m; sourceTree = "<group>"; };
+		BF99E1CD21E8760F00EE4D5C /* CLPedometerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLPedometerManager.h; sourceTree = "<group>"; };
+		BF99E1CE21E8760F00EE4D5C /* CLPedometerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPedometerManager.m; sourceTree = "<group>"; };
+		BF99E1D021E8765000EE4D5C /* CLSensorManager-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLSensorManager-PrefixHeader.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F289826BA70FF5A933E62F63 /* Pods_CLSensorManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3699622F2268D43E2B45B3EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				280A3F7517D4B272EBC5E0DB /* Pods-CLSensorManager.debug.xcconfig */,
+				94DEC604C5D7634BAA7360E6 /* Pods-CLSensorManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C3B42A6FA9FFB9A2C64AC16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BF40531E15E7437A5ECDB8C /* Pods_CLSensorManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF12E54A2129BE0D0015024F = {
 			isa = PBXGroup;
 			children = (
-				BF12E5552129BE0E0015024F /* CLSensorManager */,
+				BF99E1CC21E875C000EE4D5C /* CLSensorManager */,
+				BF12E5552129BE0E0015024F /* Module */,
 				BF12E5542129BE0E0015024F /* Products */,
+				3699622F2268D43E2B45B3EE /* Pods */,
+				8C3B42A6FA9FFB9A2C64AC16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,14 +82,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF12E5552129BE0E0015024F /* CLSensorManager */ = {
+		BF12E5552129BE0E0015024F /* Module */ = {
 			isa = PBXGroup;
 			children = (
 				BF12E56C2129BE3D0015024F /* AppDelegate */,
 				BF12E56D2129BE460015024F /* EXSensor */,
 				BF12E56F2129BE5E0015024F /* Resource */,
 			);
-			path = CLSensorManager;
+			path = Module;
 			sourceTree = "<group>";
 		};
 		BF12E56C2129BE3D0015024F /* AppDelegate */ = {
@@ -96,8 +125,18 @@
 				BF12E5612129BE0F0015024F /* LaunchScreen.storyboard */,
 				BF12E5642129BE0F0015024F /* Info.plist */,
 				BF12E5652129BE0F0015024F /* main.m */,
+				BF99E1D021E8765000EE4D5C /* CLSensorManager-PrefixHeader.pch */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		BF99E1CC21E875C000EE4D5C /* CLSensorManager */ = {
+			isa = PBXGroup;
+			children = (
+				BF99E1CD21E8760F00EE4D5C /* CLPedometerManager.h */,
+				BF99E1CE21E8760F00EE4D5C /* CLPedometerManager.m */,
+			);
+			path = CLSensorManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF12E5692129BE0F0015024F /* Build configuration list for PBXNativeTarget "CLSensorManager" */;
 			buildPhases = (
+				84712D35F9E986BB2BE9DAD5 /* [CP] Check Pods Manifest.lock */,
 				BF12E54F2129BE0E0015024F /* Sources */,
 				BF12E5502129BE0E0015024F /* Frameworks */,
 				BF12E5512129BE0E0015024F /* Resources */,
+				F04B48F5D6A23777B27EC15E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,11 +205,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84712D35F9E986BB2BE9DAD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CLSensorManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F04B48F5D6A23777B27EC15E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CLSensorManager/Pods-CLSensorManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CLFoundation/CLFoundation.framework",
+				"${BUILT_PRODUCTS_DIR}/CLUIKit/CLUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CLSensorManager/Pods-CLSensorManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF12E54F2129BE0E0015024F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF99E1CF21E8760F00EE4D5C /* CLPedometerManager.m in Sources */,
 				BF12E5732129CD130015024F /* ESSensorController.m in Sources */,
 				BF12E5662129BE0F0015024F /* main.m in Sources */,
 				BF12E5582129BE0E0015024F /* AppDelegate.m in Sources */,
@@ -301,11 +388,14 @@
 		};
 		BF12E56A2129BE0F0015024F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 280A3F7517D4B272EBC5E0DB /* Pods-CLSensorManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/CLSensorManager/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				DEVELOPMENT_TEAM = J26ST3TDCL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Module/Resource/CLSensorManager-PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Module/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +408,14 @@
 		};
 		BF12E56B2129BE0F0015024F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94DEC604C5D7634BAA7360E6 /* Pods-CLSensorManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/CLSensorManager/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				DEVELOPMENT_TEAM = J26ST3TDCL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Module/Resource/CLSensorManager-PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Module/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
